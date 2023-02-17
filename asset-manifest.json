@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-posts/static/css/main.0a979163.css",
+    "main.js": "/react-posts/static/js/main.9332ca9c.js",
+    "static/js/787.bc537a1d.chunk.js": "/react-posts/static/js/787.bc537a1d.chunk.js",
+    "static/media/dog.jpg": "/react-posts/static/media/dog.9be3dfdef85738ab4938.jpg",
+    "index.html": "/react-posts/index.html",
+    "main.0a979163.css.map": "/react-posts/static/css/main.0a979163.css.map",
+    "main.9332ca9c.js.map": "/react-posts/static/js/main.9332ca9c.js.map",
+    "787.bc537a1d.chunk.js.map": "/react-posts/static/js/787.bc537a1d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a979163.css",
+    "static/js/main.9332ca9c.js"
+  ]
+}
