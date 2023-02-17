@@ -1,0 +1,8 @@
+.postButton {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+    background-color: inherit;
+    border: solid 1px black;
+    border-radius: 3px;
+}

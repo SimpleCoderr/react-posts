@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/Header';
+import {  useSelector } from 'react-redux';
+import Loader from './components/UI/loader/Loader';
+import AppRouter from './components/AppRouter';
 
 function App() {
+  const isLoading = useSelector(state => state.app.isLoading)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <Header title={'React app'} links={['posts','users']}/>
+      <AppRouter/>
+      {isLoading && <Loader/>}
     </div>
   );
 }
