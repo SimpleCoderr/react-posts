@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+### Задание было взято с сайта [https://daruse.ru/zadaniya-po-react-dlya-prokachki](https://daruse.ru/zadaniya-po-react-dlya-prokachki)
+#### Задание:
+##### Использовать:
+* Redux - пакеты redux и react-redux
+* HashRouter - для меню и отдельных страниц из пакета react-router-dom
+* Bootstrap - для визуализации, пакет react-bootstrap и bootstrap
+* axios - для запросов на сервер, пакет axios
+##### Описание страниц:
+Компонент будет содержать 2 страницы (реализуем через HashRouter):
+* Articles - страница с постами 
+* Users - страница с пользователями
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### Функционал страницы с постами
 
-## Available Scripts
+Получаем данные отсюда: [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts) через axios.get() и записываем в стор при загрузки этой страницы
 
-In the project directory, you can run:
+Выводим 3 записи по умолчанию, внизу кнопка "Show more" - при клике на которую из стора получаем ещё 3 записи, итого их 6, кнопку можно кликать до тех пор, пока все записи не будут получены, когда они кончаться, кнопка скрывается.
 
-### `npm start`
+Вверху есть кнопка, которая переключает отображения по 3 или по 2 карточки на строку "Make big cards" или "Make small cards".
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+У каждой записи есть три кнопки "View" - при клике открывается модалка с детальной информацией записи, "Change color" - меняет цвет карточки (любые 3 цвета придумайте) - скрин ниже, "Edit" - модалка с возможность изменить запись (об этом ещё ниже читайте)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Также есть кнопка вверху "Add Article" - она открывает модалку с формой, где выводятся поля "title" и "body" и кнопка "Create", при клике на которую в стор добавляется новая запись и она добавляется последний в общий список (Ещё нужно записи дать id).
 
-### `npm test`
+У каждой записи выводиться кнопка "Edit" при клике на которую открывается такая же модалка, только с заполненными данными данной записи и кнопка "Update", которая меняет в сторе нашу запись.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+У каждой записи выводиться кнопка "Delete" при клике на которую запись удаляется из стора.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
